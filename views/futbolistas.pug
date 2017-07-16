@@ -1,0 +1,13 @@
+extends layout
+block content
+  .row
+    h1= message
+    h4
+      ul
+      each element in futbolistas
+        li        
+          a(href='/futbolistas/'+ element.id) #{element.apellido}
+
+    h5
+      a(href='/') Volver
+

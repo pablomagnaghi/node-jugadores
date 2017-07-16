@@ -1,0 +1,10 @@
+extends layout
+block content
+  .row
+    h1= futbolista.apellido
+    h4= 'Goles: ' + futbolista.goles
+
+    h5
+     a(href='/futbolistas') Futbolistas
+    h5
+     a(href='/') Menu principal
